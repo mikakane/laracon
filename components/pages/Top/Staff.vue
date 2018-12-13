@@ -9,56 +9,56 @@
         Staff
       </h2>
       <span class="subTitle">STAFF</span>
-      <div class="staffList">
-        <div class="staffList_item">
+      <ul class="staffList">
+        <li class="staffList_item">
           <img src="https://via.placeholder.com/350x150" alt="" class="staffList_icon">
           <span class="staffList_name">
             hodhiaohdskalfjhlsj
           </span>
-        </div>
-        <div class="staffList_item">
+        </li>
+        <li class="staffList_item">
           <img src="https://via.placeholder.com/350x150" alt="" class="staffList_icon">
           <span class="staffList_name">
             田中 太郎
           </span>
-        </div>
-        <div class="staffList_item">
+        </li>
+        <li class="staffList_item">
           <img src="https://via.placeholder.com/350x150" alt="" class="staffList_icon">
           <span class="staffList_name">
             田中 太郎
           </span>
-        </div>
-        <div class="staffList_item">
+        </li>
+        <li class="staffList_item">
           <img src="https://via.placeholder.com/350x150" alt="" class="staffList_icon">
           <span class="staffList_name">
             田中 太郎
           </span>
-        </div>
-        <div class="staffList_item">
+        </li>
+        <li class="staffList_item">
           <img src="https://via.placeholder.com/350x150" alt="" class="staffList_icon">
           <span class="staffList_name">
             田中 太郎
           </span>
-        </div>
-        <div class="staffList_item">
+        </li>
+        <li class="staffList_item">
           <img src="https://via.placeholder.com/350x150" alt="" class="staffList_icon">
           <span class="staffList_name">
             田中 太郎
           </span>
-        </div>
-        <div class="staffList_item">
+        </li>
+        <li class="staffList_item">
           <img src="https://via.placeholder.com/350x150" alt="" class="staffList_icon">
           <span class="staffList_name">
             田中 太郎
           </span>
-        </div>
-        <div class="staffList_item">
+        </li>
+        <li class="staffList_item">
           <img src="https://via.placeholder.com/350x150" alt="" class="staffList_icon">
           <span class="staffList_name">
             田中 太郎
           </span>
-        </div>
-      </div>
+        </li>
+      </ul>
     </div>
   </section>
 </template>
