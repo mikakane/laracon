@@ -1,0 +1,8 @@
+@import "variable";
+@import "~~/node_modules/bootstrap/scss/bootstrap.scss";
+
+@mixin desktop(){
+  @media(min-width: 768px){
+    @content
+  }
+}
