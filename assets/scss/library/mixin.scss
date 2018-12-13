@@ -1,11 +1,67 @@
 @import "~~/assets/scss/library/variable.scss";
 
-@mixin desktop(){
+//mediaQuery
+
+@mixin media_desktop(){
   @media(min-width: 768px){
     @content
   }
 }
 
-.hoge {
-  background: $clr_fontBase;
+//Typography
+
+@mixin typo_sectionTitleEn {
+  margin-bottom: .8em;
+  font-family: 'Playfair Display', serif;
+  text-transform: capitalize;
+  font-size: 2.8rem;
+
+  @media screen and (min-width: 320px) {
+    font-size: calc(2.679vw + 1.9rem);
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 4rem;
+  }
+
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: $clr_fontBase;
+
+  text-align: left;
+
+  @include media_desktop {
+    margin-bottom: 1em;
+  }
+}
+
+@mixin typo_sectionSubTitleEn {
+  display: none;
+  font-family: 'Playfair Display', serif;
+  text-transform: uppercase;
+  font-size: 50px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 6rem;
+  }
+
+  font-weight: bold;
+  letter-spacing: -1rem;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  color: rgba(234,217,216,0.7);
+  text-align: left;
+
+  position: absolute;
+  top: -1.2rem;
+  right: 50px;
+
+  @include media_desktop {
+    display: block;
+  }
+}
+
+
+//space (margin padding)
+@mixin space_section {
+  padding: 60px 0 80px;
 }
