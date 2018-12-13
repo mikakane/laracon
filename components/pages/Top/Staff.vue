@@ -5,9 +5,9 @@
       <img src="~assets/images/staff/staff_right.png" class="bg_cloudRight">
     </div>
     <div class="c-container">
-      <h1 class="title">
+      <h2 class="title">
         Staff
-      </h1>
+      </h2>
       <span class="subTitle">STAFF</span>
       <div class="staffList">
         <div class="staffList_item">
@@ -79,9 +79,9 @@
 
       @include media_desktop {
         max-width: 1500px;
-
       }
     }
+
     .bg_cloudLerf{
       width: 20vw;
       min-width: 300px;
@@ -89,6 +89,7 @@
       position: absolute;
       left: 0;
     }
+
     .bg_cloudRight {
       width: 20vw;
       min-width: 300px;
@@ -101,11 +102,9 @@
       }
     }
 
-
     .c-container {
       position: relative;
     }
-
 
     .title {
       @include typo_sectionTitleEn
@@ -123,6 +122,7 @@
         max-width: 90%;
       }
     }
+
     .staffList_item {
       margin: 0 10px;
       margin-bottom: 20px;
@@ -131,6 +131,7 @@
         margin-bottom: 30px;
       }
     }
+
     .staffList_icon {
       margin-bottom: 5px;
       display: block;
@@ -143,8 +144,8 @@
         width: 70px;
         height: 70px;
       }
-
     }
+
     .staffList_name {
       display: block;
       max-width: 60px;
@@ -159,88 +160,6 @@
       }
     }
 
-  }
-
-
-  .staff-box {
-    max-width: 150px;
-    text-align: center;
-  }
-
-  .img {
-    width: 70px;
-    height: 70px;
-    background-color: #eee;
-    border-radius: 50%;
-    display: inline-block;
-  }
-
-  .c-name {
-    color: #64547B;
-    font-size: 1.6rem;
-    display: inline-block;
-    text-align: center;
-  }
-
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-    @include media_desktop {
-      grid-template-columns: repeat(6, 1fr);
-
-    }
-  }
-
-  .item {
-    grid-area: item;
-    display: flex;
-    justify-content: start;
-
-  }
-
-  .box {
-    display: flex;
-    position: relative;
-    z-index: 999;
-  }
-
-  .c-stafftitle {
-    position: absolute;
-    max-height: 390px;
-    top: -70px;
-    right: 0px;
-    opacity: 0;
-    @include media_desktop {
-      position: absolute;
-      max-height: 390px;
-      top: -70px;
-      right: 0px;
-      opacity: 100;
-    }
-
-  }
-
-  .c-left {
-    position: absolute;
-    max-width: 390px;
-    top: 100px;
-    left: 0px;
-    max-width: 100%;
-    z-index: 99;
-  }
-
-  .c-right {
-    position: absolute;
-    max-width: 470px;
-    top: 100px;
-    right: 0px;
-    z-index: 99;
-  }
-
-  .parent {
-    position: relative;
-    z-index: 99;
   }
 </style>
 
