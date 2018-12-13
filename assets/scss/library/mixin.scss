@@ -1,8 +1,11 @@
-@import "variable";
-@import "~~/node_modules/bootstrap/scss/bootstrap.scss";
+@import "~~/assets/scss/library/variable.scss";
 
 @mixin desktop(){
   @media(min-width: 768px){
     @content
   }
+}
+
+.hoge {
+  background: $clr_fontBase;
 }

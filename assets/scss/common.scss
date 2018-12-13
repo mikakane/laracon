@@ -1,20 +1,23 @@
 @import "~~/node_modules/bootstrap/scss/bootstrap.scss";
 
+@import "~~/assets/scss/library/variable.scss";
+@import "~~/assets/scss/library/mixin.scss";
 
 :root{
-  font-size: 10px;
-  font-family: "Yu Gothic Medium","YuGothic Medium", YuGothic, "Yu Gothic","ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-  line-height: 1.7;
+  font-size: 62.5%;
+  font-family: "Yu Gothic Medium", YuGothic, "Yu Gothic","ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-weight: normal;
+  line-height: 1.8;
   color: #64547B;
 }
 
 html {
-  background-color: #fff;
+  background: #f27065;
 }
 
 body{
   margin: 0;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   text-align: center;
 }
 
