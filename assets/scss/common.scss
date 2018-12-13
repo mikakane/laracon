@@ -1,1 +1,27 @@
 @import "~~/node_modules/bootstrap/scss/bootstrap.scss";
+
+
+:root{
+  font-size: 10px;
+  font-family: "Yu Gothic Medium","YuGothic Medium", YuGothic, "Yu Gothic","ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  line-height: 1.7;
+  color: #64547B;
+}
+
+html {
+  background-color: #fff;
+}
+
+body{
+  margin: 0;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.c-container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 980px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}

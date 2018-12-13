@@ -1,0 +1,56 @@
+/*
+Error: File to import not found or unreadable: ~~/node_modules/bootstrap/scss/bootstrap.scss.
+        on line 1 of common.scss
+
+1: @import "~~/node_modules/bootstrap/scss/bootstrap.scss";
+2: 
+3: 
+4: :root{
+5:   font-size: 10px;
+6:   font-family: "Yu Gothic Medium","YuGothic Medium", YuGothic, "Yu Gothic","ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+
+Backtrace:
+common.scss:1
+/Users/ririko/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/sass-3.7.2/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/Users/ririko/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/sass-3.7.2/lib/sass/tree/import_node.rb:44:in `import'
+/Users/ririko/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/sass-3.7.2/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Users/ririko/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/sass-3.7.2/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Users/ririko/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/sass-3.7.2/lib/sass/tree/visitors/perform.rb:310:in `visit_import'
+/Users/ririko/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/sass-3.7.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/ririko/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/sass-3.7.2/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/ririko/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/sass-3.7.2/lib/sass/stack.rb:79:in `block in with_base'
+/Users/ririko/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/sass-3.7.2/lib/sass/stack.rb:135:in `with_frame'
+/Users/ririko/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/sass-3.7.2/lib/sass/stack.rb:79:in `with_base'
+/Users/ririko/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/sass-3.7.2/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/ririko/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/sass-3.7.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/ririko/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/sass-3.7.2/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/ririko/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/sass-3.7.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/ririko/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/sass-3.7.2/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Users/ririko/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/sass-3.7.2/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/ririko/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/sass-3.7.2/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Users/ririko/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/sass-3.7.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/ririko/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/sass-3.7.2/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Users/ririko/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/sass-3.7.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/ririko/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/sass-3.7.2/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Users/ririko/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/sass-3.7.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/Users/ririko/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/sass-3.7.2/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/ririko/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/sass-3.7.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/ririko/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/sass-3.7.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Users/ririko/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/sass-3.7.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Users/ririko/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/sass-3.7.2/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/Users/ririko/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/sass-3.7.2/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/ririko/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/sass-3.7.2/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/ririko/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/sass-3.7.2/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/ririko/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/sass-3.7.2/lib/sass/plugin.rb:82:in `update_stylesheets'
+/Users/ririko/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/sass-3.7.2/lib/sass/exec/sass_scss.rb:338:in `watch_or_update'
+/Users/ririko/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/sass-3.7.2/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/Users/ririko/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/sass-3.7.2/lib/sass/exec/base.rb:50:in `parse'
+/Users/ririko/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/sass-3.7.2/lib/sass/exec/base.rb:18:in `parse!'
+/Users/ririko/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/sass-3.7.2/bin/scss:13:in `<top (required)>'
+/Users/ririko/.rbenv/versions/2.5.3/bin/scss:23:in `load'
+/Users/ririko/.rbenv/versions/2.5.3/bin/scss:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: ~~/node_modules/bootstrap/scss/bootstrap.scss.\A         on line 1 of common.scss\A \A 1: @import \"~~/node_modules/bootstrap/scss/bootstrap.scss\";\A 2: \A 3: \A 4: :root{\A 5:   font-size: 10px;\A 6:   font-family: \"Yu Gothic Medium\",\"YuGothic Medium\", YuGothic, \"Yu Gothic\",\"ヒラギノ角ゴ Pro\", \"Hiragino Kaku Gothic Pro\", \"メイリオ\", Meiryo, \"ＭＳ Ｐゴシック\", \"MS PGothic\", sans-serif;"; }
