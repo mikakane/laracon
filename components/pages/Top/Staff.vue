@@ -16,43 +16,7 @@
             hodhiaohdskalfjhlsj
           </span>
         </div>
-        <div class="staffList_item">
-          <img src="https://via.placeholder.com/350x150" alt="" class="staffList_icon">
-          <span class="staffList_name">
-            田中 太郎
-          </span>
-        </div>
-        <div class="staffList_item">
-          <img src="https://via.placeholder.com/350x150" alt="" class="staffList_icon">
-          <span class="staffList_name">
-            田中 太郎
-          </span>
-        </div>
-        <div class="staffList_item">
-          <img src="https://via.placeholder.com/350x150" alt="" class="staffList_icon">
-          <span class="staffList_name">
-            田中 太郎
-          </span>
-        </div>
-        <div class="staffList_item">
-          <img src="https://via.placeholder.com/350x150" alt="" class="staffList_icon">
-          <span class="staffList_name">
-            田中 太郎
-          </span>
-        </div>
-        <div class="staffList_item">
-          <img src="https://via.placeholder.com/350x150" alt="" class="staffList_icon">
-          <span class="staffList_name">
-            田中 太郎
-          </span>
-        </div>
-        <div class="staffList_item">
-          <img src="https://via.placeholder.com/350x150" alt="" class="staffList_icon">
-          <span class="staffList_name">
-            田中 太郎
-          </span>
-        </div>
-        <div class="staffList_item">
+        <div class="staffList_item" v-for="(val,key) in [1,2,3,4,5,6,7,8,9,10]" :key="key">
           <img src="https://via.placeholder.com/350x150" alt="" class="staffList_icon">
           <span class="staffList_name">
             田中 太郎
@@ -114,21 +78,18 @@
     }
 
     .staffList {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-start;
       max-width: 100%;
       @include media_desktop{
-        max-width: 90%;
+        max-width: 85%;
       }
     }
 
     .staffList_item {
-      margin: 0 10px;
-      margin-bottom: 20px;
+      display: inline-block;
+      vertical-align: top;
+      margin: 0 10px 20px;
       @include media_desktop {
-        margin: 0 20px;
-        margin-bottom: 40px;
+        margin: 0 30px 30px;;
       }
     }
 
