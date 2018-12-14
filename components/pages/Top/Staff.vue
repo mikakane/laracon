@@ -75,6 +75,8 @@
     }
     .subTitle {
       @include typo_sectionSubTitleEn;
+      top: -1.2rem;
+      right: 50px;
     }
 
     .staffList {
