@@ -19,13 +19,35 @@
         <div class="sponsorList-silver">
           <div class="sponsorList-silver_item" v-for="(val,key) in [1,2,3,4,5]" :key="key">
           <div class="sponsorList-silver_logo"></div>
-          <router-link to="#" class="sponsorList-gold_button">
+          <router-link to="#" class="sponsorList-silver_button">
               紹介ページへ
           </router-link>
           </div>
         </div>
       </div>
+      <div class="sponsorBronze">
+        <div class="sponsorBronze_rank">BRONZE</div>
+        <div class="sponsorList-bronze">
+          <div class="sponsorList-bronze_item" v-for="(val,key) in [1,2,3,4,5,6,7,8,9,10]" :key="key">
+            <div class="sponsorList-bronze_logo"></div>
+            <router-link to="#" class="sponsorList-bronze_button">
+              紹介ページへ
+            </router-link>
+          </div>
+        </div>
+      </div>
+      <div class="sponsorOthers">
 
+        <div class="sponsorList-others">
+          <div class="sponsorList-others_item" v-for="(val,key) in [1,2,3,4,5]" :key="key">
+            <div class="sponsorOthers_rank">LUNCH</div>
+            <div class="sponsorList-others_logo"></div>
+            <router-link to="#" class="sponsorList-others_button">
+              紹介ページへ
+            </router-link>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 </template>
@@ -42,7 +64,7 @@
 <style lang="scss" scoped>
   @import "~/assets/scss/common.scss";
 
-  /*mixin*/
+  // common mixin
   @mixin space_rank {
     margin-bottom: 50px;
     @include media_desktop {
@@ -52,7 +74,7 @@
 
   @mixin rank {
     display: block;
-    margin-bottom: .8em;
+    margin-bottom: .5em;
     font-family: 'Playfair Display', serif;
     text-transform: capitalize;
     font-size: 1.8rem;
@@ -83,12 +105,17 @@
 
   @mixin button {
     display: block;
-    padding: 20px 10px;
-    font-size: 1.4rem;
+    padding: 10px 10px;
+    font-size: 1.2rem;
     color: white;
     background: $clr_btn;
     text-align: center;
     position: relative;
+
+    @include media_desktop {
+      padding: 20px 10px;
+      font-size: 1.4rem;
+    }
 
     &::after {
       content: "\f054";
@@ -102,12 +129,18 @@
       line-height: 1;
       color: #fff;
       position: absolute;
-      right: 10px;
+      right: 5px;
       top: 50%;
       transform: translateY(-50%);
+
+      @include media_desktop {
+        right: 10px;
+      }
+
     }
   }
 
+  // section
   .p-sponsor {
     @include space_section;
 
@@ -117,6 +150,8 @@
 
     background-color: #FAEAE6;
 
+
+    // sponsor GOLD
     .sponsorGold {
       @include space_rank;
     }
@@ -151,6 +186,7 @@
       @include button;
     }
 
+    // sponsor SILVER
     .sponsorSilver {
       @include space_rank;
       text-align: center;
@@ -164,6 +200,7 @@
       flex-wrap: wrap;
       justify-content: center;
       max-width: 768px;
+      width: 100%;
     }
     .sponsorList-silver_item{
       margin-right: 20px;
@@ -171,6 +208,9 @@
       width: calc((100% - 20px) / 2);
 
       &:nth-of-type(2n) {
+        margin-right: 0;
+      }
+      &:nth-of-type(5) {
         margin-right: 0;
       }
 
@@ -182,11 +222,7 @@
         &:nth-of-type(2n) {
           margin-right: 30px;
         }
-
         &:nth-of-type(3n) {
-          margin-right: 0;
-        }
-        &:nth-of-type(5) {
           margin-right: 0;
         }
       }
@@ -197,6 +233,102 @@
     .sponsorList-silver_button{
       @include button;
     }
+
+    // sponsor BRONZE
+    .sponsorBronze {
+      @include space_rank;
+      text-align: center;
+    }
+    .sponsorBronze_rank {
+      @include rank;
+    }
+
+    .sponsorList-bronze{
+      display: inline-flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+    }
+    .sponsorList-bronze_item{
+      margin-right: 10px;
+      margin-bottom: 20px;
+      width: calc((100% - 20px) / 3);
+      &:nth-of-type(3n) {
+        margin-right: 0;
+      }
+
+      @include media_desktop {
+        margin-right: 30px;
+        margin-bottom: 30px;
+        width: calc((100% - 120px) / 5);
+
+        &:nth-of-type(3n) {
+          margin-right: 30px;
+        }
+
+        &:nth-of-type(5n) {
+          margin-right: 0;
+        }
+      }
+    }
+    .sponsorList-bronze_logo{
+      @include logo;
+    }
+    .sponsorList-bronze_button{
+      @include button;
+    }
+
+    // sponsor OHTERS
+
+    .sponsorOthers {
+      @include space_rank;
+      text-align: center;
+    }
+    .sponsorOthers_rank {
+      @include rank;
+    }
+
+    .sponsorList-others{
+      display: inline-flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 768px;
+      width: 100%
+    }
+    .sponsorList-others_item{
+      margin-right: 20px;
+      margin-bottom: 20px;
+      width: calc((100% - 20px) / 2);
+
+      &:nth-of-type(2n) {
+        margin-right: 0;
+      }
+      &:nth-of-type(5) {
+        margin-right: 0;
+      }
+
+      @include media_desktop {
+        margin-right: 30px;
+        margin-bottom: 30px;
+        width: calc((100% - 60px) / 3);
+
+        &:nth-of-type(2n) {
+          margin-right: 30px;
+        }
+        &:nth-of-type(3n) {
+          margin-right: 0;
+        }
+
+      }
+    }
+    .sponsorList-others_logo{
+      @include logo;
+    }
+    .sponsorList-others_button{
+      @include button;
+    }
+
+
   }
 
 </style>
