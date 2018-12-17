@@ -11,8 +11,8 @@
 
 
 <style lang="scss" scoped>
-  @import "~/assets/scss/library/variable.scss";
-  @import "~/assets/scss/library/mixin.scss";
+  @import "~/assets/scss/common.scss";
+
   .l-footer {
     padding: 30px 0 40px;
     background: #625476;
