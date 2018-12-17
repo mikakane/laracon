@@ -104,7 +104,7 @@
         max-width: 450px;
         padding: 50px 30px;
         left: 0;
-        transform: translateX(-50%);
+        transform: none;
       }
     }
     .title {

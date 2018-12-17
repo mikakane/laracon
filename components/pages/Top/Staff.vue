@@ -75,7 +75,7 @@
     }
     .subTitle {
       @include typo_sectionSubTitleEn;
-      top: -1.2rem;
+      top: -10rem;
       right: 50px;
     }
 
