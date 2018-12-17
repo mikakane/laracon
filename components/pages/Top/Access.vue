@@ -75,7 +75,10 @@
       z-index: 200;
     }
     .accessMap {
-      text-align: right;
+      text-align: center;
+      @include media_desktop {
+        text-align: right;
+      }
     }
     .googleMap {
       width: 100%;
