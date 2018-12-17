@@ -5,7 +5,7 @@
 
       </div>
       <div class="c-container">
-        <img src="~assets/images/access/access_bg.png" class="bgImage">
+        <img src="~/assets/images/access/access_bg.png" class="bgImage">
         <span class="subTitle">ACCESS</span>
         <div class="accessMap">
           <iframe class="googleMap" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6484.699717709147!2d139.743652!3d35.643751!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bb398b1dd0d%3A0x29cde45fbedace6e!2z44Kw44Op44Oz44OR44O844Kv44Kr44Oz44OV44Kh44Os44Oz44K5!5e0!3m2!1sja!2sjp!4v1544782459878" frameborder="0" style="border:0" allowfullscreen></iframe>
