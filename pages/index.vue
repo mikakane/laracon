@@ -3,7 +3,7 @@
     <sec-hero></sec-hero>
     <sec-about></sec-about>
     <sec-access></sec-access>
-    <sec-sponsor></sec-sponsor>
+    <sec-sponsor :sponsors="sponsors"></sec-sponsor>
     <sec-staff></sec-staff>
     <sec-footer></sec-footer>
   </section>
@@ -18,6 +18,14 @@
   import secFooter from '~/components/Footer.vue'
 
   export default {
+    async asyncData({store}) {
+      const [sponsors] = await Promise.all([
+        store.dispatch("fetchSponsors")
+      ])
+      return {
+        sponsors
+      }
+    },
     components: {
       secHero,
       secAbout,

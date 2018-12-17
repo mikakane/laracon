@@ -6,8 +6,8 @@
       <div class="sponsorGold">
         <div class="sponsorGold_rank">GOLD</div>
         <div class="sponsorList-gold">
-          <div class="sponsorList-gold_item" v-for="(val,key) in [1,2,3]" :key="key">
-            <div class="sponsorList-gold_logo"></div>
+          <div class="sponsorList-gold_item" v-for="(val,key) in sponsors.GOLD.sponsors" :key="key">
+            <div class="sponsorList-gold_logo" :title="val.name"></div>
             <router-link to="#" class="sponsorList-gold_button">
               紹介ページへ
             </router-link>
@@ -17,8 +17,8 @@
       <div class="sponsorSilver">
         <div class="sponsorSilver_rank">SILVER</div>
         <div class="sponsorList-silver">
-          <div class="sponsorList-silver_item" v-for="(val,key) in [1,2,3,4,5]" :key="key">
-          <div class="sponsorList-silver_logo"></div>
+          <div class="sponsorList-silver_item" v-for="(val,key) in sponsors.SILVER.sponsors" :key="key">
+          <div class="sponsorList-silver_logo" :title="val.name"></div>
           <router-link to="#" class="sponsorList-silver_button">
               紹介ページへ
           </router-link>
@@ -28,8 +28,8 @@
       <div class="sponsorBronze">
         <div class="sponsorBronze_rank">BRONZE</div>
         <div class="sponsorList-bronze">
-          <div class="sponsorList-bronze_item" v-for="(val,key) in [1,2,3,4,5,6,7,8,9,10]" :key="key">
-            <div class="sponsorList-bronze_logo"></div>
+          <div class="sponsorList-bronze_item" v-for="(val,key) in sponsors.BRONZE.sponsors" :key="key">
+            <div class="sponsorList-bronze_logo" :title="val.name"></div>
             <router-link to="#" class="sponsorList-bronze_button">
               紹介ページへ
             </router-link>
@@ -39,9 +39,37 @@
       <div class="sponsorOthers">
 
         <div class="sponsorList-others">
-          <div class="sponsorList-others_item" v-for="(val,key) in [1,2,3,4,5]" :key="key">
+          <div class="sponsorList-others_item" v-for="(val,key) in sponsors.LUNCH.sponsors" :key="key">
             <div class="sponsorOthers_rank">LUNCH</div>
-            <div class="sponsorList-others_logo"></div>
+            <div class="sponsorList-others_logo" :title="val.name"></div>
+            <router-link to="#" class="sponsorList-others_button">
+              紹介ページへ
+            </router-link>
+          </div>
+          <div class="sponsorList-others_item" v-for="(val,key) in sponsors.DRINK.sponsors" :key="key">
+            <div class="sponsorOthers_rank">DRINK</div>
+            <div class="sponsorList-others_logo" :title="val.name"></div>
+            <router-link to="#" class="sponsorList-others_button">
+              紹介ページへ
+            </router-link>
+          </div>
+          <div class="sponsorList-others_item" v-for="(val,key) in sponsors.DRINK.sponsors" :key="key">
+            <div class="sponsorOthers_rank">ECOBAG</div>
+            <div class="sponsorList-others_logo" :title="val.name"></div>
+            <router-link to="#" class="sponsorList-others_button">
+              紹介ページへ
+            </router-link>
+          </div>
+          <div class="sponsorList-others_item" v-for="(val,key) in sponsors.DESIGN.sponsors" :key="key">
+            <div class="sponsorOthers_rank">DESIGN</div>
+            <div class="sponsorList-others_logo" :title="val.name"></div>
+            <router-link to="#" class="sponsorList-others_button">
+              紹介ページへ
+            </router-link>
+          </div>
+          <div class="sponsorList-others_item" v-for="(val,key) in sponsors.SUPPORT.sponsors" :key="key">
+            <div class="sponsorOthers_rank">SUPPORT</div>
+            <div class="sponsorList-others_logo" :title="val.name"></div>
             <router-link to="#" class="sponsorList-others_button">
               紹介ページへ
             </router-link>
@@ -53,10 +81,12 @@
 </template>
 
 <script>
-
   export default  {
-    components: {
-
+    props: {
+      sponsors: {
+        type: Object,
+        required: true
+      }
     }
   }
 </script>
@@ -162,7 +192,7 @@
     .sponsorList-gold {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
+      justify-content: flex-start;
     }
 
     .sponsorList-gold_item {
@@ -198,7 +228,7 @@
     .sponsorList-silver{
       display: inline-flex;
       flex-wrap: wrap;
-      justify-content: center;
+      justify-content: flex-start;
       max-width: 768px;
       width: 100%;
     }
@@ -246,7 +276,7 @@
     .sponsorList-bronze{
       display: inline-flex;
       flex-wrap: wrap;
-      justify-content: center;
+      justify-content: flex-start;
       width: 100%;
     }
     .sponsorList-bronze_item{
@@ -291,7 +321,7 @@
     .sponsorList-others{
       display: inline-flex;
       flex-wrap: wrap;
-      justify-content: center;
+      justify-content: flex-start;
       max-width: 768px;
       width: 100%
     }
