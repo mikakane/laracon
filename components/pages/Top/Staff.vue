@@ -3,24 +3,24 @@
     <div class="bg_deco">
       <img src="~assets/images/staff/staff_left.png" class="bg_cloudLerf">
       <img src="~assets/images/staff/staff_right.png" class="bg_cloudRight">
-    </div>
-    <div class="c-container">
-      <h2 class="title">
-        Staff
-      </h2>
-      <span class="subTitle">STAFF</span>
-      <div class="staffList">
-        <div class="staffList_item">
-          <img src="https://via.placeholder.com/350x150" alt="" class="staffList_icon">
-          <span class="staffList_name">
-            hodhiaohdskalfjhlsj
-          </span>
-        </div>
-        <div class="staffList_item" v-for="(val,key) in [1,2,3,4,5,6,7,8,9,10]" :key="key">
-          <img src="https://via.placeholder.com/350x150" alt="" class="staffList_icon">
-          <span class="staffList_name">
-            田中 太郎
-          </span>
+      <div class="c-container">
+        <h2 class="title">
+          Staff
+        </h2>
+        <span class="subTitle">STAFF</span>
+        <div class="staffList">
+          <div class="staffList_item">
+            <img src="https://via.placeholder.com/150x150" alt="" class="staffList_icon">
+            <span class="staffList_name">
+              hodhiaohdskalfjhlsj
+            </span>
+          </div>
+          <div class="staffList_item" v-for="(val,key) in [1,2,3,4,5,6,7,8,9,10]" :key="key">
+            <img src="https://via.placeholder.com/150x150" alt="" class="staffList_icon">
+            <span class="staffList_name">
+              田中 太郎
+            </span>
+          </div>
         </div>
       </div>
     </div>
@@ -42,7 +42,7 @@
       position: relative;
 
       @include media_desktop {
-        max-width: 1500px;
+        max-width: 2500px;
       }
     }
 
@@ -59,11 +59,8 @@
       min-width: 300px;
       max-width: 500px;
       position: absolute;
-      bottom: -350px;
+      bottom: -20px;
       right: 0;
-      @include media_desktop {
-        bottom: -200px;
-      }
     }
 
     .c-container {
