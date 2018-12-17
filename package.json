@@ -19,5 +19,10 @@
   },
   "devDependencies": {
     "nodemon": "^1.11.0"
+  },
+  "config": {
+    "nuxt": {
+      "host": "0.0.0.0"
+    }
   }
 }
