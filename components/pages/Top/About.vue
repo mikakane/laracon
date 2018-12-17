@@ -1,8 +1,8 @@
 <template>
   <div class="p-about">
     <div class="bg_deco">
-      <img src="~assets/images/about/about_left.png" class="bg_cloudLerf">
-      <img src="~assets/images/about/about_right.png" class="bg_cloudRight">
+      <img src="~/assets/images/about/about_left.png" class="bg_cloudLerf">
+      <img src="~/assets/images/about/about_right.png" class="bg_cloudRight">
       <div class="c-container">
         <h2 class="title">
           Laravel JP conferene

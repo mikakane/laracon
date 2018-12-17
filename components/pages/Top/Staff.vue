@@ -1,8 +1,8 @@
 <template>
   <section class="p-staff">
     <div class="bg_deco">
-      <img src="~assets/images/staff/staff_left.png" class="bg_cloudLerf">
-      <img src="~assets/images/staff/staff_right.png" class="bg_cloudRight">
+      <img src="~/assets/images/staff/staff_left.png" class="bg_cloudLerf">
+      <img src="~/assets/images/staff/staff_right.png" class="bg_cloudRight">
       <div class="c-container">
         <h2 class="title">
           Staff
