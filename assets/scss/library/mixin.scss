@@ -85,7 +85,7 @@
 
 //space (margin padding)
 @mixin space_section {
-  padding: 20px 0 40px;
+  padding: 30px 0 40px;
   @include media_desktop {
     padding: 60px 0 80px;
   }
