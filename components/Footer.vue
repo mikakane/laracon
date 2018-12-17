@@ -1,8 +1,8 @@
 <template>
   <div class="l-footer">
     <div class="box">
-      <div class="copywriter">
-        <p>© 2019 Laravel JP Conference 実行委員会</p>
+      <div class="copyright">
+        <small>© 2019 Laravel JP Conference 実行委員会</small>
       </div>
     </div>
   </div>
@@ -11,17 +11,16 @@
 
 
 <style lang="scss" scoped>
-  @import "~/assets/scss/library/variable.scss";
-  @import "~/assets/scss/library/mixin.scss";
+  @import "~/assets/scss/common.scss";
 
-  .box {
-    background-color: $clr_footerBackground;
-  }
+  .l-footer {
+    padding: 30px 0 40px;
+    background: #625476;
 
-  .copywriter {
-    color:#FFF;
-    text-align: center;
-    padding: 37px 0px 33px;
-    font-size:18px;
+    .copyright {
+      color: white;
+      letter-spacing: 1px;
+      text-align: center;
+    }
   }
 </style>

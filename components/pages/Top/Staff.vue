@@ -1,294 +1,125 @@
 <template>
-  <div class="p-staff">
-    <div class="parent">
-      <img src="~assets/images/staff/staff_left.png" class="c-left">
-      <img src="~assets/images/staff/staff_right.png" class="c-right">
-    </div>
-    <div class="c-container">
-      <div class="parent">
-        <img src="~assets/images/staff/staff_title.png" class="c-stafftitle">
-      </div>
-
-      <div class="title">
-        STAFF
-      </div>
-
-<div class="box">
-
-
-      <div class="item">
-
-        <div class="grid">
-
-          <div class="staff">
-            <div class="staff-box">
-              <div class="img"></div>
-              <p class="c-name">
-                田中 太郎
-              </p>
-            </div>
+  <section class="p-staff">
+    <div class="bg_deco">
+      <img src="~assets/images/staff/staff_left.png" class="bg_cloudLerf">
+      <img src="~assets/images/staff/staff_right.png" class="bg_cloudRight">
+      <div class="c-container">
+        <h2 class="title">
+          Staff
+        </h2>
+        <span class="subTitle">STAFF</span>
+        <div class="staffList">
+          <div class="staffList_item">
+            <img src="https://via.placeholder.com/150x150" alt="" class="staffList_icon">
+            <span class="staffList_name">
+              hodhiaohdskalfjhlsj
+            </span>
           </div>
-
-          <div class="staff">
-            <div class="staff-box">
-              <div class="img"></div>
-              <p class="c-name">
-                田中 太郎
-              </p>
-            </div>
+          <div class="staffList_item" v-for="(val,key) in [1,2,3,4,5,6,7,8,9,10]" :key="key">
+            <img src="https://via.placeholder.com/150x150" alt="" class="staffList_icon">
+            <span class="staffList_name">
+              田中 太郎
+            </span>
           </div>
-
-          <div class="staff">
-            <div class="staff-box">
-              <div class="img"></div>
-              <p class="c-name">
-                田中 太郎
-              </p>
-            </div>
-          </div>
-
-          <div class="staff">
-            <div class="staff-box">
-              <div class="img"></div>
-              <p class="c-name">
-                田中 太郎
-              </p>
-            </div>
-          </div>
-
-          <div class="staff">
-            <div class="staff-box">
-              <div class="img"></div>
-              <p class="c-name">
-                田中 太郎
-              </p>
-            </div>
-          </div>
-
-          <div class="staff">
-            <div class="staff-box">
-              <div class="img"></div>
-              <p class="c-name">
-                田中 太郎
-              </p>
-            </div>
-          </div>
-
-          <div class="staff">
-            <div class="staff-box">
-              <div class="img"></div>
-              <p class="c-name">
-                田中 太郎
-              </p>
-            </div>
-          </div>
-
-          <div class="staff">
-            <div class="staff-box">
-              <div class="img"></div>
-              <p class="c-name">
-                田中 太郎
-              </p>
-            </div>
-          </div>
-
-          <div class="staff">
-            <div class="staff-box">
-              <div class="img"></div>
-              <p class="c-name">
-                田中 太郎
-              </p>
-            </div>
-          </div>
-
-          <div class="staff">
-            <div class="staff-box">
-              <div class="img"></div>
-              <p class="c-name">
-                田中 太郎
-              </p>
-            </div>
-          </div>
-
-          <div class="staff">
-            <div class="staff-box">
-              <div class="img"></div>
-              <p class="c-name">
-                田中 太郎
-              </p>
-            </div>
-          </div>
-
-          <div class="staff">
-            <div class="staff-box">
-              <div class="img"></div>
-              <p class="c-name">
-                田中 太郎
-              </p>
-            </div>
-          </div>
-
-          <div class="staff">
-            <div class="staff-box">
-              <div class="img"></div>
-              <p class="c-name">
-                田中 太郎
-              </p>
-            </div>
-          </div>
-
-          <div class="staff">
-            <div class="staff-box">
-              <div class="img"></div>
-              <p class="c-name">
-                田中 太郎
-              </p>
-            </div>
-          </div>
-
-          <div class="staff">
-            <div class="staff-box">
-              <div class="img"></div>
-              <p class="c-name">
-                田中 太郎
-              </p>
-            </div>
-          </div>
-
-          <div class="staff">
-            <div class="staff-box">
-              <div class="img"></div>
-              <p class="c-name">
-                田中 太郎
-              </p>
-            </div>
-          </div>
-
-          <div class="staff">
-            <div class="staff-box">
-              <div class="img"></div>
-              <p class="c-name">
-                田中 太郎
-              </p>
-            </div>
-          </div>
-
-          <div class="staff">
-            <div class="staff-box">
-              <div class="img"></div>
-              <p class="c-name">
-                田中 太郎
-              </p>
-            </div>
-          </div>
-
-
         </div>
-
-
       </div>
-
     </div>
-    </div>
-  </div>
+  </section>
 </template>
 
 <script>
 </script>
 
 <style lang="scss" scoped>
-  @import "~/assets/scss/library/variable.scss";
-  @import "~/assets/scss/library/mixin.scss";
+  @import "~/assets/scss/common.scss";
 
-  .title {
-    color: #64547B;
-    font-size:4rem;
-    font-family: playfair-display; //ここが適用されない
-    font-weight: bold;
-    text-align:left;
-    margin-bottom:3.4rem;
-    position: relative
-  }
+  .p-staff {
+    @include space_section;
+    padding-bottom: 100px;
+    .bg_deco {
+      margin: 0 auto;
+      width: 100%;
+      position: relative;
 
-  .staff-box{
-    max-width:150px;
-    text-align:center;
-  }
-
-
-  .img{
-    width:70px;
-    height:70px;
-    background-color: #eee;
-    border-radius:50%;
-    display:inline-block;
-  }
-
-  .c-name{
-    color: #64547B;
-    font-size: 1.6rem;
-    display: inline-block;
-    text-align:center;
-  }
-
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-    @include desktop {
-      grid-template-columns: repeat(6, 1fr);
-
+      @include media_desktop {
+        max-width: 2500px;
+      }
     }
-  }
 
-  .item{
-    grid-area: item;
-    display: flex;
-    justify-content:  start;
-
-  }
-  .box{
-    display: flex;
-    position: relative;
-    z-index:999;
-  }
-
-  .c-stafftitle {
-    position: absolute;
-    max-height: 390px;
-    top: -70px;
-    right:0px;
-    opacity: 0;
-    @include desktop{
+    .bg_cloudLerf{
+      width: 20vw;
+      min-width: 300px;
+      max-width: 500px;
       position: absolute;
-      max-height: 390px;
-      top: -70px;
-      right:0px;
-      opacity: 100;
+      left: 0;
     }
 
-  }
+    .bg_cloudRight {
+      width: 20vw;
+      min-width: 300px;
+      max-width: 500px;
+      position: absolute;
+      bottom: -20px;
+      right: 0;
+    }
 
-  .c-left {
-    position: absolute;
-    max-width: 390px;
-    top: 100px;
-    left:0px;
-    max-width: 100%;
-    z-index:99;
-  }
+    .c-container {
+      position: relative;
+    }
 
-  .c-right {
-    position: absolute;
-    max-width: 470px;
-    top: 100px;
-    right:0px;
-    z-index:99;
-  }
+    .title {
+      @include typo_sectionTitleEn
+    }
+    .subTitle {
+      @include typo_sectionSubTitleEn;
+      top: -10rem;
+      right: 50px;
+    }
 
-  .parent{
-    position: relative;
-    z-index:99;
+    .staffList {
+      max-width: 100%;
+      @include media_desktop{
+        max-width: 85%;
+      }
+    }
+
+    .staffList_item {
+      display: inline-block;
+      vertical-align: top;
+      margin: 0 10px 20px;
+      @include media_desktop {
+        margin: 0 30px 30px;;
+      }
+    }
+
+    .staffList_icon {
+      margin-bottom: 5px;
+      display: block;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      overflow: hidden;
+      background: image;
+      @include media_desktop {
+        width: 70px;
+        height: 70px;
+      }
+    }
+
+    .staffList_name {
+      display: block;
+      max-width: 60px;
+      font-size: 1.3rem;
+      line-height: 1.4;
+      word-break: break-all;
+      text-align: center;
+      color: $clr_fontBase;
+      @include media_desktop {
+        font-size: 1.4rem;
+        max-width: 70px;
+      }
+    }
+
   }
 </style>
 
