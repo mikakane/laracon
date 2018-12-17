@@ -82,10 +82,10 @@
     }
 
     .title {
-      @include typo_sectionTitleEn
+      @include typo_sectionTitleEn;
     }
     .subTitle {
-      @include typo_sectionSubTitleEn
+      @include typo_sectionSubTitleEn;
       top: -10rem;
     }
 
@@ -98,33 +98,5 @@
       z-index: 10;
     }
   }
-
-  .text {
-
-  }
-
-
-
-  .c-abouttitle {
-    position: absolute;
-    max-height: 390px;
-    top: -70px;
-    right:0px;
-    opacity: 0;
-    @include media_desktop{
-      position: absolute;
-      max-height: 390px;
-      top: -70px;
-      right:0px;
-      opacity: 100;
-    }
-
-  }
-
-  .parent{
-    position: relative;
-    z-index:99;
-  }
-
 
 </style>
