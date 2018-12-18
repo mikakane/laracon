@@ -33,6 +33,7 @@
   background: linear-gradient(to bottom, #ff554c 0%,#a08383 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff554c', endColorstr='#a08383',GradientType=0 );
   position: relative;
+  overflow: hidden;
 
   .bg_tex {
     background-image: url("~assets/images/hero/hero_tex.svg");
@@ -42,16 +43,23 @@
   .bg_deco {
     display: inline-block;
     margin: 0 auto;
-    width: 100%;
+    width: 210vw;
     max-width: 1920px;
-    min-height: 900px;
-    background-size: cover;
+    min-height: 540px;
+    background-size: contain;
     background-image: url( "~assets/images/hero/hero_cloud.svg");
+    background-repeat: no-repeat;
+
+    @include media_desktop {
+      width: 100%;
+      min-height: 900px;
+      background-size: cover;
+    }
   }
 
   .bg_fuji {
-    width: 100vw;
-    min-width: 1880px;
+    width: 300vw;
+    max-width: 1000px;
     display: inline-block;
     background-image: url("~assets/images/hero/hero_fujiyama.png");
     background-repeat: no-repeat;
@@ -60,11 +68,17 @@
     left: 52%;
     bottom: 0;
     transform: translateX(-43%);
+    @include media_desktop {
+      width: 100vw;
+      min-width: 1880px;
+    }
+
     &::after {
       display: inline-block;
       content: "";
       padding-top: 42%;
     }
+
   }
   .c-container {
   }
@@ -72,11 +86,20 @@
 
   .logo {
     display: inline-block;
-    margin-top: 60px;
-    margin-bottom: 35px;
-    width: 310px;
-    height: 310px;
-    transform: translateX(90px);
+    margin-top: 40px;
+    margin-bottom: 50px;
+    width: 210px;
+    height: 210px;
+    transform: translateX(20%);
+
+    @include media_desktop {
+      display: inline-block;
+      margin-top: 60px;
+      margin-bottom: 35px;
+      width: 310px;
+      height: 310px;
+      transform: translateX(90px);
+    }
   }
   :-webkit-any(article,aside,nav,section) h1 {
     margin-block-start: 0;
@@ -87,29 +110,49 @@
     display: block;
     width: 100%;
     font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     color: #FFF9ED;
-    transform: translateX(30px);
+    transform: translateX(20px);
+
+    @include media_desktop {
+      font-size: 2.5rem;
+      transform: translateX(30px);
+    }
   }
   .year {
-
+    margin-bottom: .1em;
   }
   .date {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     letter-spacing: 2px;
+    @include media_desktop {
+      font-size: 2.5rem;
+    }
   }
   .month{
-    font-size: 5rem;
+    font-size: 3rem;
+    @include media_desktop{
+      font-size: 5rem;
+    }
   }
   .day{
-    font-size: 5rem;
+    font-size: 3rem;
+    @include media_desktop{
+      font-size: 5rem;
+    }
   }
   .week{
-    font-size: 4rem;
+    font-size: 2rem;
+    @include media_desktop{
+      font-size: 4rem;
+    }
   }
   .location{
     margin-bottom: 20px;
-    font-size: 3rem;
+    font-size: 1.8rem;
+    @include media_desktop{
+      font-size: 3rem;
+    }
   }
   .tw_hashtag {
     font-family: "Yu Gothic Medium", YuGothic, "Yu Gothic","ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
