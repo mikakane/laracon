@@ -2,11 +2,28 @@
   <div class="sponsor">
     <div class="bg_tex">
       <div class="bg_deco">
-        <div class="bg_fuji"></div>
-          <div class="c-container">
-            <div class="info">
-              <p>aaaaa</p>
+        <!--<div class="bg_fuji"></div>-->
+        <div class="sponsor-box">
+          <div class="sponsor-title">
+            <div class="silver-card">
+              <span class="silver">SILVER</span>
             </div>
+            <p class="sponsor-name">株式会社サンプル</p>
+          </div>
+          <div class="logo-box">
+            <div class="logo-circle">
+            </div>
+          </div>
+          <div class="sponsor-description">
+            <p>Laravel JP Conferenceは PHPのフレームワークであるLaravelをメインテーマとした技術カンファレンスです。「Laravel JP」を冠したイベントとしては日本初開催となります。</p>
+            <br>
+            <p>Laravelとは2011年6月に初版が公開されたPHPによるオープンソースなWebアプリケーションフレームワーク。PHPのフレームワークの中でもGithub stars数は一番多く、Google Trendsによる人気の動向でも日本でもっとも注目を集めています。(2018年9月現在)</p>
+            <br>
+            <p>本イベントでは主に一般公募から参加していただくスピーカーによるトークセッションと、スポンサー様から参加していただくスピーカーのトークセッション他、懇親会や参加者同士で意見交換などができる場の提供を予定しています。</p>
+          </div>
+          <a class="btn" href="#" target="_blank">
+            スポンサーページを開く
+          </a>
         </div>
       </div>
     </div>
@@ -76,13 +93,105 @@
     }
   }
 
-  .sponsor-box {
-    width: 100%;
-    height: 500px;
-    background: #f8f7f2;
+  .btn {
+    width: 90%;
+    display: block;
+    padding: 20px;
+    margin: 0 auto;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    background: $clr_btn;
+    position: relative;
     @include media_desktop {
-      width: 500px;
-      margin: 0 auto;
+      max-width: 350px;
+    }
+    &::after {
+      content: "\f35d";
+      display: inline-block;
+      font-family: "Font Awesome 5 Free";
+      font-size: .8em;
+      font-style: normal;
+      font-weight: bold;
+      font-variant: normal;
+      text-rendering: auto;
+      line-height: 1;
+      color: #fff;
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+
+      @include media_desktop {
+        right: 10px;
+      }
+
+    }
+
+  }
+
+  .sponsor-box {
+    width: 95vw;
+    background: #f8f7f2;
+    margin: 90px 10px;
+    @include media_desktop {
+      width: 55%;
+      max-width: 650px;
+      margin: 90px auto;
+    }
+    .sponsor-title {
+      height: 140px;
+      position: relative;
+      @include media_desktop {
+        height: 180px;
+      }
+      .silver-card {
+        height: 30px;
+        width: 130px;
+        top: 20px;
+        background: #64547b;
+        text-align: center;
+        position: absolute;
+        @include media_desktop {
+          height: 42px;
+          width: 153px;
+        }
+        .silver {
+          font-family: YuMincho, Medium;
+          font-size: 14px;
+          color: #ffffff;
+          line-height: 30px;
+          @include media_desktop {
+            font-size: 20px;
+            line-height: 42px;
+          }
+        }
+      }
+      .sponsor-name {
+        @include typo_sectionTitleJa;
+        top: 80px;
+        margin: 0 30px;
+        position: absolute;
+        @include media_desktop {
+          top: 100px;
+          margin: 0 50px;
+        }
+      }
+    }
+    .logo-box {
+      width: 100%;
+      height: 200px;
+      background: #ffffff;
+      @include media_desktop {
+        height: 250px;
+      }
+    }
+    .sponsor-description {
+      color: #605075;
+      padding: 30px;
+      @include media_desktop {
+        margin: 0 50px;
+      }
     }
   }
 </style>
